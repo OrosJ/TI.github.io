@@ -1,127 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portafolio</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-            box-sizing: border-box;
-        }
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Portafolio</title>
+		<link rel="stylesheet"/>
+		<link rel="stylesheet" href="./css/estilos.css" />
+	</head>
+	<body>
+		<div class="contenedor">
+			<header class="header">
+				<div class="logo">
+					<h1>PORTAFOLIO</h1>
+				</div>
+				<nav class="menu">
+					<a href="#">Inicio</a>
+					<a href="#">Acerca de</a>
+					<a href="#">Contacto</a>
+				</nav>
+			</header>
 
-        .container{
-            margin: 0 auto;
-            width: 960px;
-        }
-        header,footer{
-            text-align: center;
-            background-color: rgb(177, 5, 5);
-            margin-top: 1em;
-            margin-bottom: 1em;
-            padding: 1em;
-            border-radius: 12px;
-        }
-        .img2{
-            float: left;      
-            }
-        div nav ul{
-            list-style: none;
-            
-        }
-        div nav ul li{
-            float: left;
-        }
-        nav{
-            overflow: hidden;
-            margin-bottom: 1em;
-            background-color: silver;
-        }
-        nav ul li a{
-            text-decoration: none;
-            display: block;
-            padding: 1.5em;
-            color: red;
-        }
-        nav ul li a:hover{
-            background-color: crimson;
-            color: black;
-        }
-        section{
-            background-color: rgb(122, 122, 122);
-        }
-        section ul{
-            list-style: none;
-            overflow: hidden;
-        }
-        section ul li{
-            padding: 1.5em;
-            float: left;
-        }
+			<main class="contenido">
+				<article class="Caja">
+					<div class="contenedor-thumbnail">
+						<a><img src="./img/uab.png" alt="" /></a>
+					</div>
+					<div class="contenedor-texto">
+						<div>
+							<h2 class="titulo">
+								<a>Estudios</a>
+							</h2>
+							<p class="fecha">
+								<time>2023</time>
+							</p>
+						</div>
+						<p class="extracto">
+							Estudiante de la Universidad Adventista de Bolivia
+						</p>
+						<a href="#" class="btn-link">Leer más</a>
+					</div>
+				</article>
 
-        section ul li aside{
-            float: left;
-            width: 25%;
-        }
-        section ul li article{
-            float: right;
-            width: 75%;
-        }
-        section ul li :hover{
-            background-color:darkgoldenrod; 
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <img class="img2" src="img/uab.png" width="80" height="80">
-            <h1>Jose Carlos Oros Velasquez</h1>
-            <h2>Tecnico Superior en Sistemas Informaticos</h2>
-        </header>
-        <nav>
-            <ul>
-                <li></li>
-            </ul>
-        </nav>
-        <section>
-            <ul>
-                <li>
-                    <aside>
-                        <h1></h1>     
-                        <img src="img/code.png" width="150" height="150">
-                    </aside>
-                    <article>
-                        <h2><b>DATOS</b></h2>
-                        <p><img src="img/location.png" width="25" height="25">Ciudad: La Paz</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edad: 25 años</p>
-                        <br>
-                        <p><b><img src="img/E.png" width="25" height="25">ESTUDIOS</b></p>
-                        <p>Instituto Tecnico de Educacion Comercial Americano</p>
-                        <br>
-                        <p><b><img src="img/w.png" width="25" height="25">TRABAJO</b></p>
-                        <p>Actualmente trabajo en una empresa importadora de equipos medicos e industriales</p>
-                        <p></p>
-                    </article>
-                </li>   
-            </ul>
-            <p align="center">
-                <img src="img/html.png" width="40" height="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="img/css.png" width="40" height="40">
-            </p> 
-            <a>
-                  <form style="margin: auto; width: 80px;" method="post" action="/send/">
-                    <meter min="0" max="100" value="50"
-                           low="75" high="100">
-                  </form>
-            </a>      
-        </section>
-        <footer>
-            &copy; 2023
-        </footer>
-    </div>
-</body>
+				<article class="Caja">
+					<div class="contenedor-thumbnail">
+						<a><img src="./img/w.png" alt="" /></a>
+					</div>
+					<div class="contenedor-texto">
+						<div>
+							<h2 class="titulo">
+								<a>Trabajo Actual</a>
+							</h2>
+							<p class="fecha">
+								<time>2023</time>
+							</p>
+						</div>
+						<p class="extracto">
+							Actualmente trabajo en una empresa importadora de equipos medicos e industriales
+						</p>
+						<a href="#" class="btn-link">Leer más</a>
+					</div>
+				</article>
+
+				<article class="Caja">
+					<div class="contenedor-thumbnail">
+						<a><img src="./img/code.png" alt="" /></a>
+					</div>
+					<div class="contenedor-texto">
+						<div>
+							<h2 class="titulo">
+								<a>Tecnologias en programacion web</a>
+							</h2>
+						</div>
+						<a class="imagen2">
+							<img src="img/html.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<img src="img/css.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</a>
+						<a class="imagen3">
+							<img src="img/PHP.png">
+						</a>
+					</div>
+				</article>
+			</main>
+
+			<aside class="sidebar">
+				<div class="acerca-de">
+					<img src="./img/i.jpg" class="img-perfil" alt="" />
+
+					<div class="bio">
+						<p class="titulo">JOSE CARLOS OROS VELASQUEZ</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Impedit quae tenetur veritatis esse aperiam?
+						</p>
+					</div>
+				</div>
+				<nav class="menu">
+					<a href="#">Acerca de</a>
+					<a href="#">Portafolio</a>
+					<a href="#">Contacto</a>
+				</nav>
+			</aside>
+
+			<footer class="footer">
+				<p>Copyright © 2023</p>
+			</footer>
+		</div>
+	</body>
 </html>
